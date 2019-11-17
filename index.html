@@ -15,12 +15,59 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ebd4rxl.css">
   </head>
 
   <body>
 
-    <h1>Week 5, Part 2</h1>
 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<a class="navbar-brand" href="#">Week 5, Part 2</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+</nav>
+
+<main role="main" class="container">
+
+<div class="starter-template" style="padding-bottom: 15px; padding-top: 10px;">
+<h1>SILLY STORY GENERATOR</h1>
+<p class="lead">Fill out and see what happens next!</p>
+</div>
+
+<div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="name">
+    </div>
+    <div>
+          <label for="customfood">Enter favorite food:</label>
+          <input id="customfood" type="text" placeholder="food">
+        </div>
+<div class = "paragraph">
+  <p>Choose between US or UK & land or sea:<p>
+  </div>
+
+    <div>
+      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+    </div>
+    <div>
+      <label for="land">land</label><input id="land" type="radio" name="sealand" value="land" checked>
+      <label for="sea">sea</label><input id="sea" type="radio" name="sealand" value="sea">
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <p class="story"></p>
+
+    <div class="image">
+      <img id="imagesource">
+    </div>
+
+</main><!-- /.container -->
+<script src="js/scripts.js"></script>
 	</body>
 
 </html>
